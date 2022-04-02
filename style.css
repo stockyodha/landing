@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+  color: #d6d9db;
+  background: rgb(72, 77, 86);
+  background: linear-gradient(
+    135deg,
+    rgba(72, 77, 86, 1) 0%,
+    rgba(33, 36, 38, 1) 35%,
+    rgba(33, 36, 38, 1) 100%
+  );
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .logo p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.content {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+}
+
+.content .subtitle {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d6d9db;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #d6d9db;
+}
+.btn-neu {
+  color: #d6d9db;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: linear-gradient(
+      95.04deg,
+      rgba(0, 0, 0, 0.12) 3.11%,
+      rgba(0, 0, 0, 0) 94.96%
+    ),
+    #212426;
+  border: 2px solid rgba(255, 255, 255, 0.02);
+  box-sizing: border-box;
+  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.04),
+    6px 6px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 100px;
+}
+
+.btn-sec {
+  color: #d6d9db;
+  padding: 0.5rem 1rem;
+  border: none !important;
+  outline: none !important;
+  background-color: transparent;
+}
