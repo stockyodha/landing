@@ -78,3 +78,22 @@ a:hover {
   outline: none !important;
   background-color: transparent;
 }
+
+.overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(72, 77, 86, 1) 0%,
+    rgba(33, 36, 38, 1) 35%,
+    rgba(33, 36, 38, 1) 100%
+  );
+  opacity: 0.8;
+  box-sizing: border-box;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .bull-bear {
+    display: none;
+  }
+}
