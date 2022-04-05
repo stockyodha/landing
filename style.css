@@ -16,6 +16,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header .icon {
+  cursor: pointer;
 }
 
 .header .logo p {
@@ -90,6 +95,50 @@ a:hover {
   box-sizing: border-box;
   line-height: 1.5;
   text-align: center;
+}
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  align-items: center;
+  box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.04),
+    8px 8px 12px rgba(0, 0, 0, 0.16);
+  background: rgb(72, 77, 86);
+  background: linear-gradient(
+    135deg,
+    rgba(72, 77, 86, 1) 0%,
+    rgba(33, 36, 38, 1) 35%,
+    rgba(33, 36, 38, 1) 100%
+  );
+}
+
+#sidebar a {
+  width: 250px;
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f9d3b4;
+  display: block;
+  transition: 0.3s;
+}
+
+#sidebar a:hover {
+  cursor: pointer;
+  color: #d9896a;
+}
+
+#sidebar a.active {
+  color: #d9896a;
+}
+
+#sidebar .closebtn {
+  display: flex;
+  justify-content: end;
+  position: absolute;
 }
 
 @media screen and (max-width: 650px) {
